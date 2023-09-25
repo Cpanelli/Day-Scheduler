@@ -3,11 +3,10 @@ $(function() {
   saveButton.on("click", function (){
     var key = $(this).parent().attr("id");
     var description = (this).siblings("textarea").val();
-    localStorgae.setItem(key, description);
+    localStorage.setItem(key, description);
     key.children("textarea").val(localStorage.getItem(key));
   })
-}
-)
+
 
 var day = dayjs().day();
 var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -16,17 +15,20 @@ var now = dayjs().format('MM/DD/YYYY');
 var hour = dayjs().format('HH');
 $("#currentDay").text(weekday[day] + " " + now);
 
-for (var i = 9; i < 20; i++) {
-  var timeBlock = $("#hour-" + i);
-
-  if (i < hour) {
-    timeBlock.addClass("past");
-  } else if (i == hour) {
-    timeBlock.addClass("present");
+for ( i = 9; i < 20; i++) {
+if (i < hour) {
+  $("#hour-" + i).attr("class", "past row time-block");
+  } else if (i === hour) {
+    $("#hour-" + i).attr("class", "present row time-block");
   } else {
-    timeBlock.addClass("future");
-  }}
+    $("#hour-" + i).attr("class", "future row time-block");
+  } }
 
-  for (var i = 9; i < 20; i++) {
+  for (i = 9; i < 20; i++) {
     var div = $("#hour-" + i);
-    div.children("textarea").val(localStorage.getItem(div.attr("id"))); }
+    div.children("textarea").val(localStorage.getItem("hour-" + i));
+  }
+})
+
+   
+   
