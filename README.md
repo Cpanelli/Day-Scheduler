@@ -2,7 +2,10 @@
 
 Work Day Scheduler is a simple calendar app that helps you schedule and organize your workday. It allows you to input and save tasks for various hours of the day, and it color-codes the time blocks to indicate past, present, and future hours.
 
-![Work Day Scheduler Screenshot](screenshot.png)
+# Work Day Scheduler Screenshot's
+<img width="1440" alt="Screenshot 2023-10-18 at 1 03 49 PM" src="https://github.com/Cpanelli/Day-Scheduler/assets/133393733/c98fa949-0eca-473c-9b64-0d1ac3719399">
+<img width="1440" alt="Screenshot 2023-10-18 at 1 04 19 PM" src="https://github.com/Cpanelli/Day-Scheduler/assets/133393733/5a4c089a-3acd-4cc8-b66d-c3cc43cb2bf0">
+<img width="1440" alt="Screenshot 2023-10-18 at 1 05 06 PM" src="https://github.com/Cpanelli/Day-Scheduler/assets/133393733/4a1fd5d2-2c87-4db9-a876-22fe24a784c5">
 
 ## Features
 
@@ -40,6 +43,14 @@ Your tasks are saved in your browser's local storage, which means they will pers
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as per the terms of this license.
+
+# Links 
+
+Here are the links for the Day Scheduler and my GitHub
+
+- https://cpanelli.github.io/Day-Scheduler/
+- https://github.com/Cpanelli/Day-Scheduler
+
 
 ## Contact
 
